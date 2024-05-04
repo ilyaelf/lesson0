@@ -1,9 +1,6 @@
-def def_test(a,b,c,d):
+def def_test(*a):
     print(a)
-    print(b)
-    print(c)
-    print(d)
-
+    
 def factorial(n):
     if n ==1:
         return 1
