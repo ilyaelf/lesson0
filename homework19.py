@@ -1,6 +1,7 @@
 class Building:
     total = 0
     name = ""
+    
     def __init__(self,i):
         self.name = 'building_№'+str(i+1)
         self.total = 1+i
@@ -15,6 +16,3 @@ for i in range(40):
     print(building)
 
 print('building count',Building.total)
-
-
-
