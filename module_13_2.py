@@ -1,12 +1,11 @@
 from aiogram import Bot, Dispatcher, types
-from aiogram.filters import Command, BaseFilter
+from aiogram.filters import Command
 import asyncio
 import logging
 from aiogram.enums.dice_emoji import DiceEmoji
 
-logging.basicConfig(level=logging.DEBUG, filemode='w', filename='log.log',
-                    format="%(asctime)s|%(funcName)s|%(levelname)s|%(message)s|%(pathname)s")
-
+logging.basicConfig(level=logging.INFO, filemode='w', filename='log.log',
+                        format="%(asctime)s|%(funcName)s|%(levelname)s|%(message)s|%(pathname)s")
 
 bot = Bot(token='')
 dp = Dispatcher()
@@ -33,5 +32,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-    logging.basicConfig(level=logging.DEBUG, filemode='w', filename='log.log',
-                        format="%(asctime)s|%(funcName)s|%(levelname)s|%(message)s|%(pathname)s")
+   
