@@ -25,7 +25,6 @@ async def start(message):
 
 @dp.message(F.text == 'Рассчитать')
 async def set_age(message: types.Message, state: FSMContext):
-
     await message.answer('введите свой возраст',reply_markup = types.ReplyKeyboardRemove())
     await state.set_state(UserState.age)
 
