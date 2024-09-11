@@ -74,7 +74,7 @@ async def send_calories(message: types.Message, state: FSMContext):
 @dp.message(F.text == 'Купить')
 async def get_buying_list(message):
     for i in range(1,5):
-        img = types.FSInputFile(f'files/pic{i}.png')
+        img = types.FSInputFile(f'pic{i}.png')
         result = await message.answer_photo(
             img,
             caption=f'Название:product{i}|Описание:описание{i}|Цена:{i * 100} '
