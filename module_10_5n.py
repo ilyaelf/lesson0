@@ -7,7 +7,7 @@ def read_info(name):
         for line in file:
             all_data.append(line)
 
-file_list = ['file1.txt', 'file2.txt', 'file3.txt', 'file4.txt']
+file_list = ['file 1.txt', 'file 2.txt', 'file 3.txt', 'file 4.txt']
 
 start_time = time.time()
 for i in range(4):
